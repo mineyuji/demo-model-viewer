@@ -12,22 +12,44 @@
 </head>
 <style>
   #demo-container {
+    width: 100%;
+    height: 100%;
+  }
+  model-viewer {
     width: 500px;
     height: 500px;
+  }
+  .flex {
+    display: flex;
   }
 </style>
 <body>
   <div id="demo-container">
-    <model-viewer
-      alt="Apple"
-      src="apple.glb"
-      ar
-      environment-image="apple_img.jpeg"
-      poster="apple_img.jpeg"
-      shadow-intensity="1"
-      camera-controls
-      touch-action="pan-y"
-    ></model-viewer>
+    <div class="flex">
+      <div>
+        <model-viewer
+          alt="avatar"
+          src="https://api.readyplayer.me/v1/avatars/63c7fd1ff5987e4c1804a941.glb"
+          ar
+          environment-image="avatar_img.jpeg"
+          poster="avatar_img.jpeg"
+          shadow-intensity="1"
+          camera-controls
+          touch-action="pan-y"
+        ></model-viewer>
+      </div>
+    <div>
+      <model-viewer
+        alt="Apple"
+        src="apple.glb"
+        ar
+        environment-image="apple_img.jpeg"
+        poster="apple_img.jpeg"
+        shadow-intensity="1"
+        camera-controls
+        touch-action="pan-y"
+      ></model-viewer>
+    </div>
   </div>
 </body>
 </html>
